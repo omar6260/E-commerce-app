@@ -1,4 +1,5 @@
-import 'package:e_commerce_app/src/features/presentation/home-page/home-page.dart';
+
+import 'package:e_commerce_app/src/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
