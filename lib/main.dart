@@ -1,5 +1,6 @@
 
-import 'package:e_commerce_app/src/presentation/pages/home_page.dart';
+
+import 'package:e_commerce_app/src/presentation/pages/intro_page/onboarding_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:const HomePage(),
+      home: OnboardingPage(),
     );
   }
 }
