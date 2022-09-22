@@ -1,6 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:e_commerce_app/src/presentation/pages/home_page.dart';
+import 'package:e_commerce_app/src/presentation/pages/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/repositories/app_properitie.dart';
@@ -32,8 +32,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 setState(() {
                   pageIndex = value;
                 });
-              }
-              ),
+              }),
               controller: controller,
               children: [
                 Column(
@@ -47,17 +46,18 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         width: 200,
                       ),
                     ),
-                    const Padding(padding: EdgeInsets.symmetric(horizontal: 32),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Get Any Thing Online',
+                        'Obtenez tot ce que vous voulez en ligne',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 32, vertical: 16.0),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
                         'You can buy anything ranging from digital products to hardware within few clicks.',
                         textAlign: TextAlign.right,
@@ -80,15 +80,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'Shipping to anywhere ',
+                        'Expédition rapide',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 32, vertical: 16.0),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
                         'We will ship to anywhere in the world, With 30 day 100% money back policy.',
                         textAlign: TextAlign.right,
@@ -111,15 +111,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 32),
                       child: Text(
-                        'On-time delivery',
+                        'details de livraison',
                         textAlign: TextAlign.right,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 32, vertical: 16.0),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
                         'You can track your product with our powerful tracking service.',
                         textAlign: TextAlign.right,
@@ -176,7 +176,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           child: FlatButton(
                             splashColor: Colors.transparent,
                             child: Text(
-                              'SKIP',
+                              'Passer',
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
@@ -193,7 +193,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             ? FlatButton(
                                 splashColor: Colors.transparent,
                                 child: Text(
-                                  'NEXT',
+                                  'Suivant',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
@@ -210,7 +210,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             : FlatButton(
                                 splashColor: Colors.transparent,
                                 child: const Text(
-                                  'FINISH',
+                                  'Terminer',
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold,
