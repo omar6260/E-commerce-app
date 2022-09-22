@@ -38,6 +38,11 @@ dependencies:
   http: ^0.13.5
   riverpod: ^1.0.3+1
   equatable: ^2.0.5
+  firebase_core: ^1.23.0
+  form_validators:
+    path: packages/form_validators
+  authentication_repository:
+    path: packages/firebase_auth_repository
   
 
 flutter_native_splash:
