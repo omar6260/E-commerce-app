@@ -1,12 +1,11 @@
-// ignore_for_file: deprecated_member_use
 
-import 'package:e_commerce_app/src/presentation/pages/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/repositories/app_properitie.dart';
+import '../home_page/home.dart';
 
 class OnboardingPage extends StatefulWidget {
-  OnboardingPage({Key? key}) : super(key: key);
+  const OnboardingPage({Key? key}) : super(key: key);
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
