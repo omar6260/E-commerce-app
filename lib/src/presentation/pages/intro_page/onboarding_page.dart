@@ -58,7 +58,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       padding:
                           EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can buy anything ranging from digital products to hardware within few clicks.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut aliqua.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),
@@ -89,7 +89,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       padding:
                           EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'We will ship to anywhere in the world, With 30 day 100% money back policy.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do aliqua.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),
@@ -120,7 +120,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       padding:
                           EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
                       child: Text(
-                        'You can track your product with our powerful tracking service.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua.',
                         textAlign: TextAlign.right,
                         style: TextStyle(color: Colors.grey, fontSize: 12.0),
                       ),

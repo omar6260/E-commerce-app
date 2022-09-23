@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../application/service/api_service.dart';
@@ -14,10 +13,10 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        title: Text('Flutter Sénégal'),
+        title: Text('Shoping'),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.yellow[800],
         // after creation de du navigaton AllCategory
         actions: [
           IconButton(

@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../application/service/api_service.dart';
 import '../../../data/repositories/app_properitie.dart';
-
 
 class ProductDetail extends StatelessWidget {
   final int id;
@@ -14,7 +12,7 @@ class ProductDetail extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(183, 51, 97, 247),
+        backgroundColor: Colors.yellow[800],
       ),
       // SECOND CREAT OF PRODUCT
 

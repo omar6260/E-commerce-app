@@ -12,7 +12,7 @@ class AllCategory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Category'),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.yellow[800],
         centerTitle: true,
       ),
       // THREE CREAT OF ALLCATEGORY
