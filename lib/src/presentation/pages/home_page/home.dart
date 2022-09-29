@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         title: Text('Shoping'),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.yellow[800],
+        backgroundColor: Color.fromARGB(177, 236, 156, 26),
         // after creation de du navigaton AllCategory
         actions: [
           IconButton(

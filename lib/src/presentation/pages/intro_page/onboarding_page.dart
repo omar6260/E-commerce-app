@@ -1,4 +1,5 @@
 
+import 'package:e_commerce_app/src/presentation/pages/authentication/screens/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/repositories/app_properitie.dart';
@@ -172,8 +173,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       children: <Widget>[
                         Opacity(
                           opacity: pageIndex != 2 ? 1.0 : 0.0,
-                          child: FlatButton(
-                            splashColor: Colors.transparent,
+                          child: TextButton(
                             child: Text(
                               'Passer',
                               style: TextStyle(
@@ -189,8 +189,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           ),
                         ),
                         pageIndex != 2
-                            ? FlatButton(
-                                splashColor: Colors.transparent,
+                            ? TextButton(
+                                
                                 child: Text(
                                   'Suivant',
                                   style: TextStyle(
@@ -206,8 +206,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                                   }
                                 },
                               )
-                            : FlatButton(
-                                splashColor: Colors.transparent,
+                            : TextButton(
+                                
                                 child: const Text(
                                   'Terminer',
                                   style: TextStyle(
@@ -218,7 +218,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                                 onPressed: () {
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
-                                          builder: (context) => HomePage()));
+                                          builder: (context) => const WelcomeScreen()));
                                 },
                               )
                       ],
@@ -232,4 +232,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       ),
     );
   }
+  
+  
+ 
 }

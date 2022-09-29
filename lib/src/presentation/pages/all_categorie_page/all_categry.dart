@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../application/service/api_service.dart';
 import '../categorie_page/category_product.dart';
 
-
 class AllCategory extends StatelessWidget {
   const AllCategory({Key? key}) : super(key: key);
 
@@ -12,7 +11,7 @@ class AllCategory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Category'),
-        backgroundColor: Colors.yellow[800],
+        backgroundColor: Color.fromARGB(177, 236, 156, 26),
         centerTitle: true,
       ),
       // THREE CREAT OF ALLCATEGORY

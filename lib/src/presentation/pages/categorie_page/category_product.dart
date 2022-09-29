@@ -15,7 +15,7 @@ class CategoryProductScreen extends StatelessWidget {
         title: Text(
           categoryName.toUpperCase(),
         ),
-        backgroundColor: Colors.yellow[800],
+        backgroundColor: Color.fromARGB(177, 236, 156, 26),
         centerTitle: true,
       ),
 

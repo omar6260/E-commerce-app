@@ -12,7 +12,7 @@ class CartScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Cart'),
         centerTitle: true,
-        backgroundColor: Colors.yellow[800],
+        backgroundColor: Color.fromARGB(177, 236, 156, 26),
       ),
       // FIVE CREAT OF GETCRT
       body: FutureBuilder(
