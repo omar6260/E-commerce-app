@@ -2,39 +2,37 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_builder.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
+
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      appBar: AppBar(
-        title: const Text('Sign Up'),
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
-      ),
-       body: SingleChildScrollView(
-         child: Container(
-          child: Column(children: [
-            SizedBox(height: 20,),
-             Container(
-                  height: 180,
-                  width: MediaQuery.of(context).size.width,
-                  decoration: const BoxDecoration(
-                      image:
-                          DecorationImage(image: AssetImage("assets/signup.png"))),
-                ),
-            const MyStatefulWidget(),
-          ])
-         ,),
-       )
-    );
-    
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        appBar: AppBar(
+          title: const Text('Sign Up'),
+          backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        ),
+        body: SingleChildScrollView(
+          child: Container(
+            child: Column(children: [
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 180,
+                width: MediaQuery.of(context).size.width,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/signup.png"))),
+              ),
+              const MyStatefulWidget(),
+            ]),
+          ),
+        ));
   }
 }
-
-
-
 
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({super.key});
@@ -55,7 +53,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-             Padding(
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: TextFormField(
                 decoration: const InputDecoration(
@@ -83,9 +81,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 },
               ),
             ),
-             Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 16.0),
-               child: TextFormField(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Enter your password',
                 ),
@@ -95,11 +93,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   }
                   return null;
                 },
+              ),
             ),
-             ),
-              Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 16.0),
-               child: TextFormField(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: TextFormField(
                 decoration: const InputDecoration(
                   hintText: 'Enter your password again',
                 ),
@@ -109,40 +107,37 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   }
                   return null;
                 },
+              ),
             ),
-             ),
             Center(
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child:  SignInButtonBuilder(
-  text: 'Sign Up with Email',
-  // height: ,
-  // width: MediaQuery.of(context).size.width-20,
-  icon: Icons.email,
-  onPressed: () {
-                  // Validate will return true if the form is valid, or false if
-                  // the form is invalid.
-                  if (_formKey.currentState!.validate()) {
-                    // Process data.
-                  }
-                },
-  backgroundColor: Colors.blueGrey[700]!,
-),
+                child: SignInButtonBuilder(
+                  text: 'Sign Up with Email',
+                  // height: ,
+                  // width: MediaQuery.of(context).size.width-20,
+                  icon: Icons.email,
+                  onPressed: () {
+                    // Validate will return true if the form is valid, or false if
+                    // the form is invalid.
+                    if (_formKey.currentState!.validate()) {
+                      // Process data.
+                    }
+                  },
+                  backgroundColor: Colors.blueGrey[700]!,
+                ),
               ),
             ),
             Center(child: Text("OR")),
             Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4.0),
-                child: SignInButton(
-  Buttons.Google,
-  text: "Sign Up with Google",
-  onPressed: () {},
-)
-              ),
+                  padding: const EdgeInsets.symmetric(vertical: 4.0),
+                  child: SignInButton(
+                    Buttons.Google,
+                    text: "Sign Up with Google",
+                    onPressed: () {},
+                  )),
             ),
-           
-
           ],
         ),
       ),

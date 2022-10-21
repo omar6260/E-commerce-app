@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_builder.dart';
 import 'package:flutter_signin_button/button_list.dart';
@@ -29,8 +27,8 @@ class LoginScreen extends StatelessWidget {
                 height: 220,
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
-                    image:
-                        DecorationImage(image: AssetImage("assets/login.png"))),
+                    image: DecorationImage(
+                        image: AssetImage("assets/signin.png"))),
               ),
               const MyStatefulWidget(),
             ]),
@@ -104,9 +102,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     // the form is invalid.
                     if (_formKey.currentState!.validate()) {
                       // Process data.
-                      auth.createUserWithEmailAndPassword(email: email.text, password: password.text).then((_){
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const HomePage()));
-                  });
+                      auth
+                          .createUserWithEmailAndPassword(
+                              email: email.text, password: password.text)
+                          .then((_) {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const HomePage()));
+                      });
                     }
                   },
                   backgroundColor: Colors.blueGrey[700]!,
